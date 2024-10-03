@@ -1,0 +1,12 @@
+$font-weights: (
+  "thin": 100,
+  "normal": 400,
+  "thick": 700,
+  "extra-think": 900
+);
+
+@each $name, $weight in $font-weights {
+  .fw-#{$name} {
+    font-weight: $weight;
+  }
+}

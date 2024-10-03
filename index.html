@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Example</title>
+    <style>
+        /* Base Colors */
+        :root {
+            --info: #326dee;
+            --success: #1ac888;
+            --warn: #f6c31c; 
+            --error: #d32752;
+
+            /* Complementary Colors */
+            --info-complement: #fbd04b; 
+            --success-complement: #c42047; 
+
+            /* Neutrals */
+            --background: #f8f8f8; 
+            --text-primary: #222;  
+            --text-secondary: #666; 
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--text-primary);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--info); 
+            color: white;
+        }
+
+        .btn-success {
+            background-color: var(--success); 
+            color: white;
+        }
+
+        /* Alerts */
+        .alert {
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .alert-warning {
+            background-color: var(--info-complement); 
+            color: var(--text-primary); 
+        }
+
+        .alert-error {
+            background-color: var(--success-complement);
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Color Scheme Example</h1>
+
+        <h2>Buttons</h2>
+        <a href="#" class="btn btn-primary">Primary Button</a>
+        <a href="#" class="btn btn-success">Success Button</a>
+
+        <h2>Alerts</h2>
+        <div class="alert alert-warning">
+            This is a warning message!
+        </div>
+        <div class="alert alert-error">
+            This is an error message!
+        </div>
+    </div>
+</body>
+</html>
